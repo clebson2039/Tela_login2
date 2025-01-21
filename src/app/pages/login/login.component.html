@@ -8,16 +8,19 @@
             <div>
                 <input class="input-Login" placeholder="email" formControlName="email" />
             </div>
-            <div class="mensagem-erro" *ngIf="loginForm.get('email')?.errors?.['required'] && loginForm.get('email')?.touched">
+            <div class="mensagem-erro"
+                *ngIf="loginForm.get('email')?.errors?.['required'] && loginForm.get('email')?.touched">
                 Campo Obrigatório
             </div>
-            <div class="mensagem-erro" *ngIf="loginForm.get('email')?.errors?.['email'] && loginForm.get('email')?.touched">
+            <div class="mensagem-erro"
+                *ngIf="loginForm.get('email')?.errors?.['email'] && loginForm.get('email')?.touched">
                 Formato de email não é válido
             </div>
             <div>
                 <input class="input-Login" type="password" placeholder="senha" formControlName="senha" />
             </div>
-            <div class="mensagem-erro" *ngIf="loginForm.get('senha')?.errors?.['required'] && loginForm.get('senha')?.touched">
+            <div class="mensagem-erro"
+                *ngIf="loginForm.get('senha')?.errors?.['required'] && loginForm.get('senha')?.touched">
                 Campo Obrigatório
             </div>
         </div>
