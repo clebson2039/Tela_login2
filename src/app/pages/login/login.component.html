@@ -1,0 +1,21 @@
+<div class="conteudo-login">
+    <form class="conteudo-form" [formGroup]="loginForm">
+        <div>
+            <div>
+                <H1 class="titulo">Login</H1>
+            </div>
+            <div>
+                <input class="input-Login" placeholder="email" formControlName="email">
+            </div>
+            <div class="mensagem-erro">
+                Email obrigatório!
+            </div>
+            <div>
+                <input class="input-Senha" placeholder="senha" formControlName="senha">
+            </div>
+            <div class="mensagem-erro">
+                Senha obrigatório!
+            </div>
+        </div>
+    </form>
+</div>
