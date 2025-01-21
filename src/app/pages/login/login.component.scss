@@ -6,7 +6,7 @@
 
   .conteudo-form {
     border-radius: 10%;
-    background-color: #FE9CCC;
+    background-color: #fe9ccc;
     box-shadow: 0 30px 60px 0 gray;
     text-align: center;
     width: 45%;
@@ -18,22 +18,22 @@
   }
 }
 
-.titulo{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.titulo {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .input-Login {
-    background-color: #f6f6f6;
-    border: none;
-    color: #0d0d0d;
-    padding: 15px 0px;
-    text-align: center;
-    font-size: 16px;
-    margin: 5px;
-    width: 90%;
-    border: 2px solid #f6f6f6;
-    transition: all 0.5s ease-in-out;
-    border-radius: 5px 5px 5px 5px;
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 0px;
+  text-align: center;
+  font-size: 16px;
+  margin: 5px;
+  width: 90%;
+  border: 2px solid #f6f6f6;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .input-Senha {
@@ -51,7 +51,23 @@
 }
 
 .mensagem-erro {
-    font-size: 14px;
-    color: red;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 14px;
+  color: red;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.input-submit {
+  background-color: #0d0d0d;
+  color: #f6f6f6;
+  border: none;
+  padding: 15px 0px;
+  margin-top: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  box-shadow: 0px 10px 30px 0px #8f2a8b;
+  border-radius: 5px 5px 5px 5px;
+  transition: all 0.3s ease-in-out;
+  width: 60%;
+  cursor: pointer;
 }
