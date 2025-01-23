@@ -1,7 +1,9 @@
+import { Token } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoginModel } from 'src/app/models/loginModel';
+import { LoginService } from 'src/app/service/login.service';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +13,7 @@ import { LoginModel } from 'src/app/models/loginModel';
 export class LoginComponent implements OnInit {
   loginForm!: FormGroup;
 
-  constructor(private formbuilder: FormBuilder, private router: Router) {}
+  constructor(private formbuilder: FormBuilder, private router: Router, public loginService: LoginService) {}
 
   ngOnInit(): void {
     this.loginForm = this.formbuilder.group({
@@ -22,5 +24,16 @@ export class LoginComponent implements OnInit {
   submitLogin() {
     debugger;
     var dadosLogin = this.loginForm.getRawValue() as LoginModel;
+    
+    this.loginService.LoginUsuario(dadosLogin)
+    .subscribe(
+      token =>{
+        debugger
+        var nossoToken = Token
+      },
+      erro => {
+        
+      }
+    )
   }
 }
