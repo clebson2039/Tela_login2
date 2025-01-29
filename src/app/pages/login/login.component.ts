@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
     .subscribe(
       token =>{
         debugger
-        var nossoToken = Token
+        var nossoToken = token
       },
       erro => {
         
