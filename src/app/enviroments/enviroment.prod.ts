@@ -1,3 +1,3 @@
 export const enviroment = {
-    poduction: false,
+    poduction: false
 };
